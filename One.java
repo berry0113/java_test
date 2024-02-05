@@ -17,6 +17,7 @@ class One implements Start{
         System.out.println("4../月ノ美兎");
         System.out.println("5../樋口楓");
         System.out.println("6../モイラ");
+        System.out.println("-------------------------------------");
         // 説明文のあるテキストファイルを変数に入れる
         String filePath = "one_period.txt";
         try{

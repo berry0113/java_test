@@ -1,28 +1,25 @@
 import java.io.*;
 import java.util.*;
 
-// 2期生を読み取られたときのクラス
-class Two extends One{
+// ゲーマーズを読み取られたときのクラス
+class Ideos extends One{
     @Override
     public void play() {
         // エラーを表示してくれるクラスを定義
         HandleException he=new HandleException();
         Scanner stdIn = new Scanner(System.in, "UTF-8");
         System.out.println("-------------------------------------");
-        System.out.println("2期生のだれを調べたいですか？");
-        System.out.println("0../家長むぎ");
-        System.out.println("1../字志海いちご");
-        System.out.println("2../ギルザレン三世");
-        System.out.println("3../剣持刀也");
-        System.out.println("4../鈴鹿詩子");
-        System.out.println("5../伏見ガク");
-        System.out.println("6../文野環");
-        System.out.println("7../物述有栖");
-        System.out.println("8../森中花咲");
-        System.out.println("9../夕陽リリ");
+        System.out.println("イディオスのだれを調べたいですか？");
+        System.out.println("0../小清水透");
+        System.out.println("1../獅子堂あかり");
+        System.out.println("2../鏑木ろこ");
+        System.out.println("3../五十嵐梨花");
+        System.out.println("4../石神のぞみ");
+        System.out.println("5../ソフィア・ヴァレンタイン");
+        System.out.println("6../倉持めると");
         System.out.println("-------------------------------------");
         // 説明文のあるテキストファイルを変数に入れる
-        String filePath = "two_period.txt";
+        String filePath = "ideos.txt";
         try{
             int num = stdIn.nextInt();
             // 指定したテキストファイルを読み取る
@@ -47,7 +44,7 @@ class Two extends One{
 
             // switchで入力されたものに合わせて表示する
             switch (num) {
-                case 0,1,2,3,4,5,6,7,8,9 ->
+                case 0,1,2,3,4,5,6 ->
                     result=vList.get(num);
                 default->
                     flg=false;

@@ -9,7 +9,7 @@ class Mitarasidan extends One{
         HandleException he=new HandleException();
         Scanner stdIn = new Scanner(System.in, "UTF-8");
         System.out.println("-------------------------------------");
-        System.out.println("ゲーマーズのだれを調べたいですか？");
+        System.out.println("みたらし団のだれを調べたいですか？");
         System.out.println("0../栞葉るり");
         System.out.println("1../立伝都々");
         System.out.println("2../ミラン・ケストレル");

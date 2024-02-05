@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // Treeを読み取られたときのクラス
-class Red_Organization extends One{
+class RedOrganization extends One{
     @Override
     public void play() {
         // エラーを表示してくれるクラスを定義
